@@ -3,7 +3,7 @@
 
 namespace ClothingStore.DataAccess.Repositories.BrandRepsoitory
 {
-    interface IBrandRepsotitory : IGenericRepository<ProductBrand>
+    public interface IBrandRepsotitory : IGenericRepository<ProductBrand>
     {
     }
 }

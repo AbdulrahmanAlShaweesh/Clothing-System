@@ -20,9 +20,7 @@ C:\Mac\Home\Documents\FullStock\BackEnd\MVC\ClothingStoreManagement\ClothingStor
 C:\Mac\Home\Documents\FullStock\BackEnd\MVC\ClothingStoreManagement\ClothingStore.BusinessLogic\bin\Debug\net8.0\ClothingStore.BusinessLogic.dll
 C:\Mac\Home\Documents\FullStock\BackEnd\MVC\ClothingStoreManagement\ClothingStore.BusinessLogic\bin\Debug\net8.0\ClothingStore.BusinessLogic.pdb
 C:\Mac\Home\Documents\FullStock\BackEnd\MVC\ClothingStoreManagement\ClothingStore.BusinessLogic\bin\Debug\net8.0\ClothingStore.DataAccess.dll
-C:\Mac\Home\Documents\FullStock\BackEnd\MVC\ClothingStoreManagement\ClothingStore.BusinessLogic\bin\Debug\net8.0\ClothingStore.Domain.dll
 C:\Mac\Home\Documents\FullStock\BackEnd\MVC\ClothingStoreManagement\ClothingStore.BusinessLogic\bin\Debug\net8.0\ClothingStore.DataAccess.pdb
-C:\Mac\Home\Documents\FullStock\BackEnd\MVC\ClothingStoreManagement\ClothingStore.BusinessLogic\bin\Debug\net8.0\ClothingStore.Domain.pdb
 C:\Mac\Home\Documents\FullStock\BackEnd\MVC\ClothingStoreManagement\ClothingStore.BusinessLogic\obj\Debug\net8.0\ClothingStore.BusinessLogic.csproj.AssemblyReference.cache
 C:\Mac\Home\Documents\FullStock\BackEnd\MVC\ClothingStoreManagement\ClothingStore.BusinessLogic\obj\Debug\net8.0\ClothingStore.BusinessLogic.GeneratedMSBuildEditorConfig.editorconfig
 C:\Mac\Home\Documents\FullStock\BackEnd\MVC\ClothingStoreManagement\ClothingStore.BusinessLogic\obj\Debug\net8.0\ClothingStore.BusinessLogic.AssemblyInfoInputs.cache
