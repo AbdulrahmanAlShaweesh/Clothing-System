@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ClothingStore.DataAccess.Models
+namespace ClothingStore.DataAccess.Shared.Classess
 {
     public class BaseEntity
     {

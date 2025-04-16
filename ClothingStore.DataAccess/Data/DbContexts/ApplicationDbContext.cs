@@ -1,9 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Reflection;
-using System.Text;
-using System.Threading.Tasks;
+﻿
+using ClothingStore.DataAccess.Models.ProductModel;
 
 namespace ClothingStore.DataAccess.Data.DbContexts
 {
@@ -11,6 +7,7 @@ namespace ClothingStore.DataAccess.Data.DbContexts
     {
         public DbSet<Product> Products { get; set; }
         public DbSet<Category> Categories { get; set; }
+        public DbSet<ProductBrand> ProductBrand { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

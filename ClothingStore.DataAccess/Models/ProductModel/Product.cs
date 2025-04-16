@@ -1,13 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
+﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using ClothingStore.DataAccess.Shared.Classess;
 using ClothingStore.Domain.Enums;
 
-namespace ClothingStore.DataAccess.Models
+namespace ClothingStore.DataAccess.Models.ProductModel
 {
    public class Product : BaseEntity
     {
@@ -29,5 +25,12 @@ namespace ClothingStore.DataAccess.Models
         public DiscountStatus  DiscountStatu { get; set; }
         public ProductStatus ProductStatu { get; set; }
         public Gender Genders { get; set; }
+
+        // Navigational Properity
+        public int BrandId { get; set; }
+        public ProductBrand ProductBrand { get; set; }
+
+        public int CategoryId { get; set; }
+        public Category Category { get; set; }
     }
 }

@@ -8,7 +8,7 @@ namespace ClothingStore.DataAccess.Services.ProductService
 {
     public interface ProductServices
     {
-        int CreateDepartment()
+        //int CreateDepartment()
 
         //int CreateDepartment(CreatedDepartmentDto departmentDto);
         //bool DeleteDepartment(int id);
