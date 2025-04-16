@@ -1,4 +1,6 @@
 ﻿
+using ClothingStore.DataAccess.Models.ProductModel;
+
 namespace ClothingStore.DataAccess.Data.Configurations
 {
     class ProductConfigurations : BaseEntityConfigurations<Product>, IEntityTypeConfiguration<Product> 

@@ -1,5 +1,6 @@
 using ClothingStore.DataAccess.Data.DbContexts;
 using ClothingStore.DataAccess.Repositories.CategoryRepository;
+using ClothingStore.DataAccess.Repositories.CategoryRepository.Interfaces;
 using ClothingStore.DataAccess.Repositories.ProductRespository;
 using Microsoft.EntityFrameworkCore;
 

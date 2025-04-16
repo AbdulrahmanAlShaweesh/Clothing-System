@@ -1,13 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
+﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using ClothingStore.DataAccess.Shared.Classess;
 using ClothingStore.Domain.Enums;
 
-namespace ClothingStore.DataAccess.Models
+namespace ClothingStore.DataAccess.Models.ProductModel
 {
    public class Product : BaseEntity
     {

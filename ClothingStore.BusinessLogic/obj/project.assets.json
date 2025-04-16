@@ -990,7 +990,6 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
-          "ClothingStore.Domain": "1.0.0",
           "Microsoft.EntityFrameworkCore": "8.0.14",
           "Microsoft.EntityFrameworkCore.SqlServer": "8.0.14"
         },
@@ -999,16 +998,6 @@
         },
         "runtime": {
           "bin/placeholder/ClothingStore.DataAccess.dll": {}
-        }
-      },
-      "ClothingStore.Domain/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v8.0",
-        "compile": {
-          "bin/placeholder/ClothingStore.Domain.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/ClothingStore.Domain.dll": {}
         }
       }
     }
@@ -2736,11 +2725,6 @@
       "type": "project",
       "path": "../ClothingStore.DataAccess/ClothingStore.DataAccess.csproj",
       "msbuildProject": "../ClothingStore.DataAccess/ClothingStore.DataAccess.csproj"
-    },
-    "ClothingStore.Domain/1.0.0": {
-      "type": "project",
-      "path": "../ClothingStore.Domain/ClothingStore.Domain.csproj",
-      "msbuildProject": "../ClothingStore.Domain/ClothingStore.Domain.csproj"
     }
   },
   "projectFileDependencyGroups": {

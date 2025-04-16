@@ -1,4 +1,4 @@
-﻿
+﻿using ClothingStore.DataAccess.Shared.Classess;
 
 namespace ClothingStore.DataAccess.Data.Configurations
 {

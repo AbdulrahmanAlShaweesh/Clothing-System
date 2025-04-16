@@ -1,4 +1,6 @@
-﻿ 
+﻿
+using ClothingStore.DataAccess.Models.ProductModel;
+
 namespace ClothingStore.DataAccess.Data.DbContexts
 {
     public class ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : DbContext(options)

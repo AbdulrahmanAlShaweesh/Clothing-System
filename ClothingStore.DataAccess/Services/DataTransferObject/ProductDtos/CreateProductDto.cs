@@ -5,6 +5,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using ClothingStore.DataAccess.Models.ProductModel;
 using ClothingStore.Domain.Enums;
 
 namespace ClothingStore.DataAccess.Services.DataTransferObject.ProductDtos
