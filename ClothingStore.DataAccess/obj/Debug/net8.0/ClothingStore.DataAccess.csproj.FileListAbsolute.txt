@@ -29,8 +29,5 @@ C:\Mac\Home\Documents\FullStock\BackEnd\MVC\ClothingStoreManagement\ClothingStor
 C:\Mac\Home\Documents\FullStock\BackEnd\MVC\ClothingStoreManagement\ClothingStore.DataAccess\bin\Debug\net8.0\ClothingStore.DataAccess.runtimeconfig.json
 C:\Mac\Home\Documents\FullStock\BackEnd\MVC\ClothingStoreManagement\ClothingStore.DataAccess\bin\Debug\net8.0\ClothingStore.DataAccess.dll
 C:\Mac\Home\Documents\FullStock\BackEnd\MVC\ClothingStoreManagement\ClothingStore.DataAccess\bin\Debug\net8.0\ClothingStore.DataAccess.pdb
-C:\Mac\Home\Documents\FullStock\BackEnd\MVC\ClothingStoreManagement\ClothingStore.DataAccess\bin\Debug\net8.0\ClothingStore.Domain.dll
-C:\Mac\Home\Documents\FullStock\BackEnd\MVC\ClothingStoreManagement\ClothingStore.DataAccess\bin\Debug\net8.0\ClothingStore.Domain.pdb
-C:\Mac\Home\Documents\FullStock\BackEnd\MVC\ClothingStoreManagement\ClothingStore.DataAccess\obj\Debug\net8.0\Clothing.50970FF8.Up2Date
 C:\Mac\Home\Documents\FullStock\BackEnd\MVC\ClothingStoreManagement\ClothingStore.DataAccess\obj\Debug\net8.0\ClothingStore.DataAccess.genruntimeconfig.cache
 C:\Mac\Home\Documents\FullStock\BackEnd\MVC\ClothingStoreManagement\ClothingStore.DataAccess\obj\Debug\net8.0\ref\ClothingStore.DataAccess.dll
