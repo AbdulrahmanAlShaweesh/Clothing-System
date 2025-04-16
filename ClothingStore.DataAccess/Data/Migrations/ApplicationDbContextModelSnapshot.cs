@@ -34,10 +34,12 @@ namespace ClothingStore.DataAccess.Data.Migrations
                         .HasColumnType("int");
 
                     b.Property<DateTime>("CreatedOn")
-                        .HasColumnType("datetime2");
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("datetime2")
+                        .HasDefaultValueSql("GETDATE()");
 
                     b.Property<string>("Description")
-                        .HasColumnType("nvarchar(max)");
+                        .HasColumnType("varchar(150)");
 
                     b.Property<string>("ImageUrl")
                         .IsRequired()
@@ -50,11 +52,13 @@ namespace ClothingStore.DataAccess.Data.Migrations
                         .HasColumnType("int");
 
                     b.Property<DateTime>("LastModifiedOn")
-                        .HasColumnType("datetime2");
+                        .ValueGeneratedOnAddOrUpdate()
+                        .HasColumnType("datetime2")
+                        .HasComputedColumnSql("GETDATE()");
 
                     b.Property<string>("Name")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasColumnType("varchar(30)");
 
                     b.HasKey("Id");
 
@@ -69,10 +73,16 @@ namespace ClothingStore.DataAccess.Data.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
+                    b.Property<int>("BrandId")
+                        .HasColumnType("int");
+
                     b.Property<string>("BrandName")
                         .IsRequired()
                         .HasMaxLength(50)
                         .HasColumnType("nvarchar(50)");
+
+                    b.Property<int>("CategoryId")
+                        .HasColumnType("int");
 
                     b.Property<byte>("Colors")
                         .HasColumnType("tinyint");
@@ -143,7 +153,76 @@ namespace ClothingStore.DataAccess.Data.Migrations
 
                     b.HasKey("Id");
 
+                    b.HasIndex("BrandId");
+
+                    b.HasIndex("CategoryId");
+
                     b.ToTable("Products");
+                });
+
+            modelBuilder.Entity("ClothingStore.DataAccess.Models.ProductBrand", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<int>("CreatedBy")
+                        .HasColumnType("int");
+
+                    b.Property<DateTime>("CreatedOn")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("datetime2")
+                        .HasDefaultValueSql("GETDATE()");
+
+                    b.Property<bool>("IsDeleted")
+                        .HasColumnType("bit");
+
+                    b.Property<int>("LastModifiedBy")
+                        .HasColumnType("int");
+
+                    b.Property<DateTime>("LastModifiedOn")
+                        .ValueGeneratedOnAddOrUpdate()
+                        .HasColumnType("datetime2")
+                        .HasComputedColumnSql("GETDATE()");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("varchar(50)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("ProductBrand");
+                });
+
+            modelBuilder.Entity("ClothingStore.DataAccess.Models.Product", b =>
+                {
+                    b.HasOne("ClothingStore.DataAccess.Models.ProductBrand", "ProductBrand")
+                        .WithMany("Products")
+                        .HasForeignKey("BrandId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("ClothingStore.DataAccess.Models.Category", "Category")
+                        .WithMany("Products")
+                        .HasForeignKey("CategoryId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Category");
+
+                    b.Navigation("ProductBrand");
+                });
+
+            modelBuilder.Entity("ClothingStore.DataAccess.Models.Category", b =>
+                {
+                    b.Navigation("Products");
+                });
+
+            modelBuilder.Entity("ClothingStore.DataAccess.Models.ProductBrand", b =>
+                {
+                    b.Navigation("Products");
                 });
 #pragma warning restore 612, 618
         }
