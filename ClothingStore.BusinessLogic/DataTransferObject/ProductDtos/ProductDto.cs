@@ -1,7 +1,7 @@
 ﻿
 using System.ComponentModel.DataAnnotations;
 
-namespace ClothingStore.DataAccess.Services.DataTransferObject.ProductDtos
+namespace ClothingStore.BusinessLogic.DataTransferObject.ProductDtos
 {
     public class ProductDto
     {

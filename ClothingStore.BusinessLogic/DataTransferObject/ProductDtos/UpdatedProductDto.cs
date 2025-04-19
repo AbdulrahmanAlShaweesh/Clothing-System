@@ -2,7 +2,7 @@
 using ClothingStore.DataAccess.Models.ProductModel;
 using ClothingStore.Domain.Enums;
 
-namespace ClothingStore.DataAccess.Services.DataTransferObject.ProductDtos
+namespace ClothingStore.BusinessLogic.DataTransferObject.ProductDtos
 {
     public class UpdatedProductDto
     {

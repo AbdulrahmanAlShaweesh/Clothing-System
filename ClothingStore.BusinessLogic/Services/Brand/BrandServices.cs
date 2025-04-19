@@ -1,6 +1,6 @@
 ﻿
+using ClothingStore.BusinessLogic.DataTransferObject.BrandDtos;
 using ClothingStore.BusinessLogic.Factories;
-using ClothingStore.BusinessLogic.Services.DataTransferObject.BrandDtos;
 using ClothingStore.DataAccess.Repositories.BrandRepsoitory;
 
 namespace ClothingStore.BusinessLogic.Services.Brand

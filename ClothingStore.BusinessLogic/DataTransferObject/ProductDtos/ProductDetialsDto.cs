@@ -1,10 +1,8 @@
-﻿
-
-using ClothingStore.DataAccess.Models.ProductModel;
+﻿using ClothingStore.DataAccess.Models.ProductModel;
 using ClothingStore.Domain.Enums;
 using System.ComponentModel.DataAnnotations;
 
-namespace ClothingStore.DataAccess.Services.DataTransferObject.ProductDtos
+namespace ClothingStore.BusinessLogic.DataTransferObject.ProductDtos
 {
     public class ProductDetialsDto
     {

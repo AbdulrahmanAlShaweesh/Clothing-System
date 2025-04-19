@@ -1,7 +1,7 @@
-﻿ 
+﻿
 using System.ComponentModel.DataAnnotations;
- 
-namespace ClothingStore.BusinessLogic.Services.DataTransferObject.ProductDtos
+
+namespace ClothingStore.BusinessLogic.DataTransferObject.ProductDtos
 {
     public class DeletedProductDto
     {

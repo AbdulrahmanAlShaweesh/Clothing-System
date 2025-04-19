@@ -1,3 +1,6 @@
+using ClothingStore.BusinessLogic.Services.Brand;
+using ClothingStore.BusinessLogic.Services.Product;
+using ClothingStore.BusinessLogic.Services.ProductTypeService;
 using ClothingStore.DataAccess.Data.DbContexts;
 using ClothingStore.DataAccess.Repositories.BrandRepsoitory;
 using ClothingStore.DataAccess.Repositories.CategoryRepository;
@@ -24,7 +27,10 @@ namespace ClothingStore.Presentation.Layter
             builder.Services.AddScoped<IBrandRepsotitory, BrandRepsot>();
             builder.Services.AddScoped<IProductRepository, ProductRepository>();
             builder.Services.AddScoped<ICategoryRepository, CategoryRepository>();
-             
+            builder.Services.AddScoped<IProductService, ProductService>();
+            builder.Services.AddScoped<IBrandServices, BrandServices>();   
+            builder.Services.AddScoped<ICategoryService, CategoryService>();
+
             var app = builder.Build();
             #endregion
 

@@ -1,5 +1,5 @@
-﻿ 
-using ClothingStore.DataAccess.Services.DataTransferObject.ProductDtos;
+﻿
+using ClothingStore.BusinessLogic.DataTransferObject.ProductDtos;
 
 namespace ClothingStore.BusinessLogic.Services.Product
 {

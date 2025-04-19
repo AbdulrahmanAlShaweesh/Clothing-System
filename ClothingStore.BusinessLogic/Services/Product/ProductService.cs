@@ -1,8 +1,8 @@
 ﻿
 
+using ClothingStore.BusinessLogic.DataTransferObject.ProductDtos;
 using ClothingStore.BusinessLogic.Factories;
 using ClothingStore.DataAccess.Repositories.ProductRepository;
-using ClothingStore.DataAccess.Services.DataTransferObject.ProductDtos;
 
 namespace ClothingStore.BusinessLogic.Services.Product
 {

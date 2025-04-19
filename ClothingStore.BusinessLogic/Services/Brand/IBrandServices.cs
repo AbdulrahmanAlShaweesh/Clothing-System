@@ -1,6 +1,6 @@
 ﻿
 
-using ClothingStore.BusinessLogic.Services.DataTransferObject.BrandDtos;
+using ClothingStore.BusinessLogic.DataTransferObject.BrandDtos;
 
 namespace ClothingStore.BusinessLogic.Services.Brand
 {

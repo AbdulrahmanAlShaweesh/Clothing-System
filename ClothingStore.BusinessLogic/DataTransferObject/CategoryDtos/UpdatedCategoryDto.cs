@@ -1,10 +1,12 @@
 ﻿
+
 using System.ComponentModel.DataAnnotations;
 
-namespace ClothingStore.BusinessLogic.Services.DataTransferObject.BrandDtos
+namespace ClothingStore.BusinessLogic.DataTransferObject.CategoryDtos
 {
-    public class CreatedBrandDto
+    public class UpdatedCategoryDto
     {
+        public int Id { get; set; }
         [Required(ErrorMessage = "Name is required.")]
         [MaxLength(50, ErrorMessage = "Name can't be longer than 50 characters.")]
         [MinLength(5, ErrorMessage = "Name must be at least 5 characters.")]

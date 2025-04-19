@@ -1,7 +1,7 @@
 ﻿
 using System.ComponentModel.DataAnnotations;
 
-namespace ClothingStore.BusinessLogic.Services.DataTransferObject.BrandDtos
+namespace ClothingStore.BusinessLogic.DataTransferObject.BrandDtos
 {
     public class BrandDetialsDto
     {
