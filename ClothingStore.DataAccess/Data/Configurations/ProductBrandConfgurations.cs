@@ -1,5 +1,7 @@
 ﻿
 
+using ClothingStore.DataAccess.Models.BrandModel;
+
 namespace ClothingStore.DataAccess.Data.Configurations
 {
     class ProductBrandConfgurations : BaseEntityConfigurations<ProductBrand> , IEntityTypeConfiguration<ProductBrand>

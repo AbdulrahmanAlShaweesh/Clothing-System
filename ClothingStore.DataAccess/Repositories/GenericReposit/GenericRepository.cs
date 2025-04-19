@@ -8,7 +8,7 @@ namespace ClothingStore.DataAccess.Repositories.GenericReposit
     public class GenericRepository<TEntity>(ApplicationDbContext _dbContext) : IGenericRepository<TEntity> where TEntity : BaseEntity
     {
 
-        public IEnumerable<TEntity> GetAll(bool WithTracking)
+        public IEnumerable<TEntity> GetAll(bool WithTracking = false)
         {
             if (WithTracking) return _dbContext.Set<TEntity>().Where(P => P.IsDeleted != true).ToList();
             else return _dbContext.Set<TEntity>().AsNoTracking().Where(P => P.IsDeleted).ToList();

@@ -22,9 +22,9 @@ namespace ClothingStore.Presentation.Layter
             });
 
             builder.Services.AddScoped<IBrandRepsotitory, BrandRepsot>();
-            builder.Services.AddScoped<IProductRepository, IProductRepository>();
+            builder.Services.AddScoped<IProductRepository, ProductRepository>();
             builder.Services.AddScoped<ICategoryRepository, CategoryRepository>();
-
+             
             var app = builder.Build();
             #endregion
 

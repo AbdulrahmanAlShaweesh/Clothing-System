@@ -16,7 +16,7 @@ namespace ClothingStore.DataAccess.Data.Configurations
             builder.HasOne(C => C.Category)
                    .WithMany(P =>  P.Products)
                    .HasForeignKey(P => P.CategoryId)
-                   .OnDelete(DeleteBehavior.Cascade);
+                   .OnDelete(DeleteBehavior.Restrict);
 
             builder.Property(P => P.Id).UseIdentityColumn(1, 1);
             builder.Property(P => P.Name).HasColumnType("varchar(50)").IsRequired();

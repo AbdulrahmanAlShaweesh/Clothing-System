@@ -911,20 +911,11 @@
       },
       "ClothingStore.DataAccess/1.0.0": {
         "dependencies": {
-          "ClothingStore.Domain": "1.0.0",
           "Microsoft.EntityFrameworkCore": "8.0.14",
           "Microsoft.EntityFrameworkCore.SqlServer": "8.0.14"
         },
         "runtime": {
           "ClothingStore.DataAccess.dll": {
-            "assemblyVersion": "1.0.0.0",
-            "fileVersion": "1.0.0.0"
-          }
-        }
-      },
-      "ClothingStore.Domain/1.0.0": {
-        "runtime": {
-          "ClothingStore.Domain.dll": {
             "assemblyVersion": "1.0.0.0",
             "fileVersion": "1.0.0.0"
           }
@@ -1476,11 +1467,6 @@
       "sha512": ""
     },
     "ClothingStore.DataAccess/1.0.0": {
-      "type": "project",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "ClothingStore.Domain/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

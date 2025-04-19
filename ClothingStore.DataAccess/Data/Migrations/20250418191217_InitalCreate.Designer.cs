@@ -12,7 +12,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace ClothingStore.DataAccess.Data.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20250416170531_InitalCreate")]
+    [Migration("20250418191217_InitalCreate")]
     partial class InitalCreate
     {
         /// <inheritdoc />
@@ -25,7 +25,43 @@ namespace ClothingStore.DataAccess.Data.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
-            modelBuilder.Entity("ClothingStore.DataAccess.Models.Category", b =>
+            modelBuilder.Entity("ClothingStore.DataAccess.Models.BrandModel.ProductBrand", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<int>("CreatedBy")
+                        .HasColumnType("int");
+
+                    b.Property<DateTime>("CreatedOn")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("datetime2")
+                        .HasDefaultValueSql("GETDATE()");
+
+                    b.Property<bool>("IsDeleted")
+                        .HasColumnType("bit");
+
+                    b.Property<int>("LastModifiedBy")
+                        .HasColumnType("int");
+
+                    b.Property<DateTime>("LastModifiedOn")
+                        .ValueGeneratedOnAddOrUpdate()
+                        .HasColumnType("datetime2")
+                        .HasComputedColumnSql("GETDATE()");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("varchar(50)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("ProductBrand");
+                });
+
+            modelBuilder.Entity("ClothingStore.DataAccess.Models.CategoryModel.Category", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -68,7 +104,7 @@ namespace ClothingStore.DataAccess.Data.Migrations
                     b.ToTable("Categories");
                 });
 
-            modelBuilder.Entity("ClothingStore.DataAccess.Models.Product", b =>
+            modelBuilder.Entity("ClothingStore.DataAccess.Models.ProductModel.Product", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -163,54 +199,18 @@ namespace ClothingStore.DataAccess.Data.Migrations
                     b.ToTable("Products");
                 });
 
-            modelBuilder.Entity("ClothingStore.DataAccess.Models.ProductBrand", b =>
+            modelBuilder.Entity("ClothingStore.DataAccess.Models.ProductModel.Product", b =>
                 {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
-
-                    b.Property<int>("CreatedBy")
-                        .HasColumnType("int");
-
-                    b.Property<DateTime>("CreatedOn")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("datetime2")
-                        .HasDefaultValueSql("GETDATE()");
-
-                    b.Property<bool>("IsDeleted")
-                        .HasColumnType("bit");
-
-                    b.Property<int>("LastModifiedBy")
-                        .HasColumnType("int");
-
-                    b.Property<DateTime>("LastModifiedOn")
-                        .ValueGeneratedOnAddOrUpdate()
-                        .HasColumnType("datetime2")
-                        .HasComputedColumnSql("GETDATE()");
-
-                    b.Property<string>("Name")
-                        .IsRequired()
-                        .HasColumnType("varchar(50)");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("ProductBrand");
-                });
-
-            modelBuilder.Entity("ClothingStore.DataAccess.Models.Product", b =>
-                {
-                    b.HasOne("ClothingStore.DataAccess.Models.ProductBrand", "ProductBrand")
+                    b.HasOne("ClothingStore.DataAccess.Models.BrandModel.ProductBrand", "ProductBrand")
                         .WithMany("Products")
                         .HasForeignKey("BrandId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("ClothingStore.DataAccess.Models.Category", "Category")
+                    b.HasOne("ClothingStore.DataAccess.Models.CategoryModel.Category", "Category")
                         .WithMany("Products")
                         .HasForeignKey("CategoryId")
-                        .OnDelete(DeleteBehavior.Cascade)
+                        .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
 
                     b.Navigation("Category");
@@ -218,12 +218,12 @@ namespace ClothingStore.DataAccess.Data.Migrations
                     b.Navigation("ProductBrand");
                 });
 
-            modelBuilder.Entity("ClothingStore.DataAccess.Models.Category", b =>
+            modelBuilder.Entity("ClothingStore.DataAccess.Models.BrandModel.ProductBrand", b =>
                 {
                     b.Navigation("Products");
                 });
 
-            modelBuilder.Entity("ClothingStore.DataAccess.Models.ProductBrand", b =>
+            modelBuilder.Entity("ClothingStore.DataAccess.Models.CategoryModel.Category", b =>
                 {
                     b.Navigation("Products");
                 });

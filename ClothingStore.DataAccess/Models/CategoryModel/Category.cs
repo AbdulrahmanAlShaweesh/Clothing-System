@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using ClothingStore.DataAccess.Models.ProductModel;
 using ClothingStore.DataAccess.Shared.Classess;
 
-namespace ClothingStore.DataAccess.Models
+namespace ClothingStore.DataAccess.Models.CategoryModel
 {
     public class Category : BaseEntity
     {

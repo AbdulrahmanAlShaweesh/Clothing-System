@@ -1,4 +1,6 @@
 ﻿
+using ClothingStore.DataAccess.Models.BrandModel;
+using ClothingStore.DataAccess.Models.CategoryModel;
 using ClothingStore.DataAccess.Models.ProductModel;
 
 namespace ClothingStore.DataAccess.Data.DbContexts

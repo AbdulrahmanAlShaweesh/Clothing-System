@@ -1,5 +1,7 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using ClothingStore.DataAccess.Models.BrandModel;
+using ClothingStore.DataAccess.Models.CategoryModel;
 using ClothingStore.DataAccess.Shared.Classess;
 using ClothingStore.Domain.Enums;
 
@@ -17,7 +19,7 @@ namespace ClothingStore.DataAccess.Models.ProductModel
         public string BrandName { get; set; } = null!;
         public ProductSize Size { get; set; }
         public ProductColors Colors { get; set; }
-        public float Rating { get; set; } = 0;   
+        public float Rating { get; set; } = 0;        // ask khalid....
         public int StockQuantity { get; set; }
         public bool IsAvailable { get; set; }
         public string ImageUrl { get; set; } = null!;
@@ -28,9 +30,9 @@ namespace ClothingStore.DataAccess.Models.ProductModel
 
         // Navigational Properity
         public int BrandId { get; set; }
-        public ProductBrand ProductBrand { get; set; }
+        public ProductBrand ProductBrand { get; set; } = null!;
 
         public int CategoryId { get; set; }
-        public Category Category { get; set; }
+        public Category Category { get; set; } = null!;
     }
 }

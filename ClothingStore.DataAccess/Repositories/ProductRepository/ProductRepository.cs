@@ -5,7 +5,7 @@ using ClothingStore.DataAccess.Repositories.GenericReposit;
 
 namespace ClothingStore.DataAccess.Repositories.ProductRepository
 {
-    class ProductRepository(ApplicationDbContext dbContext) : GenericRepository<Product>(dbContext) , IProductRepository
+    public class ProductRepository(ApplicationDbContext dbContext) : GenericRepository<Product>(dbContext), IProductRepository
     {
     }
 }

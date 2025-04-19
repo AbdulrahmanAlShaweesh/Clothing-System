@@ -86,7 +86,7 @@ namespace ClothingStore.DataAccess.Data.Migrations
                         column: x => x.CategoryId,
                         principalTable: "Categories",
                         principalColumn: "Id",
-                        onDelete: ReferentialAction.Cascade);
+                        onDelete: ReferentialAction.Restrict);
                     table.ForeignKey(
                         name: "FK_Products_ProductBrand_BrandId",
                         column: x => x.BrandId,

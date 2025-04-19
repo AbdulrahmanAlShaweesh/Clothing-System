@@ -286,10 +286,8 @@ C:\Mac\Home\Documents\FullStock\BackEnd\MVC\ClothingStoreManagement\ClothingStor
 C:\Mac\Home\Documents\FullStock\BackEnd\MVC\ClothingStoreManagement\ClothingStore.Presentation.Layter\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
 C:\Mac\Home\Documents\FullStock\BackEnd\MVC\ClothingStoreManagement\ClothingStore.Presentation.Layter\bin\Debug\net8.0\ClothingStore.BusinessLogic.dll
 C:\Mac\Home\Documents\FullStock\BackEnd\MVC\ClothingStoreManagement\ClothingStore.Presentation.Layter\bin\Debug\net8.0\ClothingStore.DataAccess.dll
-C:\Mac\Home\Documents\FullStock\BackEnd\MVC\ClothingStoreManagement\ClothingStore.Presentation.Layter\bin\Debug\net8.0\ClothingStore.Domain.dll
 C:\Mac\Home\Documents\FullStock\BackEnd\MVC\ClothingStoreManagement\ClothingStore.Presentation.Layter\bin\Debug\net8.0\ClothingStore.BusinessLogic.pdb
 C:\Mac\Home\Documents\FullStock\BackEnd\MVC\ClothingStoreManagement\ClothingStore.Presentation.Layter\bin\Debug\net8.0\ClothingStore.DataAccess.pdb
-C:\Mac\Home\Documents\FullStock\BackEnd\MVC\ClothingStoreManagement\ClothingStore.Presentation.Layter\bin\Debug\net8.0\ClothingStore.Domain.pdb
 C:\Mac\Home\Documents\FullStock\BackEnd\MVC\ClothingStoreManagement\ClothingStore.Presentation.Layter\obj\Debug\net8.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
 C:\Mac\Home\Documents\FullStock\BackEnd\MVC\ClothingStoreManagement\ClothingStore.Presentation.Layter\obj\Debug\net8.0\scopedcss\bundle\ClothingStore.Presentation.styles.css
 C:\Mac\Home\Documents\FullStock\BackEnd\MVC\ClothingStoreManagement\ClothingStore.Presentation.Layter\obj\Debug\net8.0\scopedcss\projectbundle\ClothingStore.Presentation.bundle.scp.css

@@ -13,3 +13,5 @@ namespace ClothingStore.DataAccess.Repositories.GenericRepository.GenericReposit
         int Remove(TEntity entity);
     }
 }
+
+

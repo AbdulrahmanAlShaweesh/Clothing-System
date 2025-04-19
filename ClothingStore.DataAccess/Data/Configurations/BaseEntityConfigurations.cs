@@ -11,3 +11,5 @@ namespace ClothingStore.DataAccess.Data.Configurations
         }
     }
 }
+
+
